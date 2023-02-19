@@ -1,0 +1,11 @@
+public void zad02() {
+        MethodCurrier mCurrier = new MethodCurrier();
+        int i = 22;
+        float f = 22;
+        Number n = new Number();
+        mCurrier.setValue(i);
+        mCurrier.setValue(f);
+        mCurrier.setValue(n);
+
+        mCurrier.setValue(n);
+    }
