@@ -1,0 +1,6 @@
+    public void zad3(){
+       Osoba osoba = new Osoba();
+       osoba.imie = "Jan";
+       osoba.nazwisko= "Kowalski";
+       osoba.rokUrodzenia = 1975;
+    }
