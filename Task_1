@@ -1,0 +1,8 @@
+    public void zad01() {
+        MethodCurrier mCurrier = new MethodCurrier();
+        mCurrier.setValue((int) 22);
+        mCurrier.setValue((float) 22);
+        mCurrier.setValue((char) 22);
+        mCurrier.setValue(((byte) 22));
+
+    }
