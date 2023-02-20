@@ -1,0 +1,21 @@
+class Osoba {
+    public String imie;
+    public String nazwisko;
+    public int rokUrodzenia;
+
+    Osoba() {
+        imie = "Jacek";
+        nazwisko = "Placek";
+        rokUrodzenia = 1889;
+    }
+
+    Osoba(String imie, String nazwisko, int rokUrodzenia) {
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        this.rokUrodzenia = rokUrodzenia;
+    }
+
+    void show() {
+        System.out.println("Imie " + imie + ", Nazwisko " + nazwisko + ", rok urodzenia " + rokUrodzenia);
+    }
+}
