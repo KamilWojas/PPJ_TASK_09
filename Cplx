@@ -1,0 +1,42 @@
+class Cplx {
+    private Double real;
+    private Double imaginary;
+
+    Cplx() {
+        this.real = 1d;
+        this.imaginary = 1d;
+    }
+
+    Cplx(Double r, Double i) {
+        this.real = r;
+        this.imaginary = i;
+    }
+
+    void add(Cplx c) {
+        this.real += c.real;
+        this.imaginary += c.imaginary;
+    }
+
+    void sub(Cplx c) {
+        this.real -= c.real;
+        this.imaginary -= c.imaginary;
+    }
+
+    void mul(Cplx c) {
+        Double a1 = this.real;
+        Double a2 = c.real;
+        Double b1 = this.imaginary;
+        Double b2 = c.imaginary;
+
+        this.real = ((a1 * a2) - (b1 * b2));
+        this.imaginary = ((a1 * b2) + (b1 * a2));
+    }
+
+    void inc() {
+        this.real++;
+    }
+
+    void show() {
+        System.out.println(this.real + " + " + this.imaginary + "i");
+    }
+}
