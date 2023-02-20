@@ -1,0 +1,11 @@
+class Number {
+    int pole = 0;
+
+    void setValue(int i) {
+        this.pole = i;
+    }
+
+    void showValue() {
+        System.out.println(this.pole);
+    }
+}
