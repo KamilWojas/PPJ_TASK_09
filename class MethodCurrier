@@ -1,0 +1,22 @@
+class MethodCurrier {
+
+    void setValue(int i) {
+        System.out.println("int before " + i);
+        i++;
+        System.out.println("int after " + i);
+    }
+
+    void setValue(float f) {
+        System.out.println("float before " + f);
+        f++;
+        System.out.println("float before " + f);
+    }
+
+    void setValue(Number n) {
+        System.out.println("Number before " + n + " wartosc pola " + n.pole);
+        n.setValue(n.pole + 1);
+        System.out.println("Number in between " + n + " wartosc pola " + n.pole);
+        n = new Number();
+        System.out.println("Number after " + n + " wartosc pola " + n.pole);
+    }
+}
