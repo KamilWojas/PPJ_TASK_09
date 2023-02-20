@@ -1,0 +1,25 @@
+public void zad05() {
+        Cplx a = new Cplx();
+        System.out.println("a");
+        a.show();
+        Cplx b = new Cplx(2d, 4d);
+        System.out.println("b");
+        b.show();
+        Cplx c = new Cplx(6d, 8d);
+        System.err.println("c");
+        c.show();
+
+        System.out.println("a+b");
+        a.add(b);
+        a.show();
+        System.out.println("b*c");
+        b.mul(c);
+        b.show();
+        System.err.println("a inc");
+        a.inc();
+        a.show();
+        System.out.println("b-c");
+        b.sub(c);
+        b.show();
+
+    }
